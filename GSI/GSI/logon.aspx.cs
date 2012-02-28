@@ -18,16 +18,18 @@ namespace GSI
         private SqlCommand sqlCom;
         private SqlDataReader sqlReader;
  
-
+        protected  void Page_Init(object sender, EventArgs e)
+        {
+            wuc = WebUserControl11;
+            btnLogin = (Button)wuc.FindControl("btnLogin");
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
-            sqlConn = new SqlConnection(); 
-
-            wuc = WebUserControl11;
-            if (wuc != null && !IsPostBack)
+            sqlConn = new SqlConnection();          
+           
+            if (wuc != null )
             {
-                btnLogin = (Button)wuc.FindControl("btnLogin");
-                btnLogin.Click +=new EventHandler(btnLogin_Click);
+                btnLogin.Click += new EventHandler(btnLogin_Click);
             }
         }
 
@@ -44,7 +46,7 @@ namespace GSI
             {
                 sqlCom.Parameters.AddWithValue("userName", wuc.User);
                 sqlCom.Parameters.AddWithValue("passWord", wuc.Password);
-                sqlCom.CommandText = "SELECT Users.User, Users.Password,Users.userRole WHERE Users.User=userName";
+                sqlCom.CommandText = "SELECT Username, Password,userRole FROM Users WHERE Username=userName";
                 sqlReader = sqlCom.ExecuteReader();
                 string user = (String)sqlReader[0];
                 
