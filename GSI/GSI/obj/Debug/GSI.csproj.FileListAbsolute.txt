@@ -1,0 +1,5 @@
+D:\VS\Oving5-GSI\GSI\GSI\bin\GSI.dll
+D:\VS\Oving5-GSI\GSI\GSI\bin\GSI.pdb
+D:\VS\Oving5-GSI\GSI\GSI\obj\Debug\ResolveAssemblyReference.cache
+D:\VS\Oving5-GSI\GSI\GSI\obj\Debug\GSI.dll
+D:\VS\Oving5-GSI\GSI\GSI\obj\Debug\GSI.pdb

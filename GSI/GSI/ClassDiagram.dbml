@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="GSIDatabase" Class="ClassDiagramDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\GSIDatabase.mdf;Integrated Security=True;User Instance=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="GSIDatabaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.medlemmer" Member="medlemmers">
+    <Type Name="medlemmer">
+      <Column Name="idMedlemmer" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Fornavn" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Etternavn" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Kjonn" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Association Name="medlemmer_MedSport" Member="MedSports" ThisKey="idMedlemmer" OtherKey="idMedlemmer" Type="MedSport" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MedSport" Member="MedSports">
+    <Type Name="MedSport">
+      <Column Name="idSport" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idMedlemmer" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="medlemmer_MedSport" Member="medlemmer" ThisKey="idMedlemmer" OtherKey="idMedlemmer" Type="medlemmer" IsForeignKey="true" />
+      <Association Name="Sport_MedSport" Member="Sport" ThisKey="idSport" OtherKey="idSport" Type="Sport" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Sport" Member="Sports">
+    <Type Name="Sport">
+      <Column Name="idSport" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Navn" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Sport_MedSport" Member="MedSports" ThisKey="idSport" OtherKey="idSport" Type="MedSport" />
+    </Type>
+  </Table>
+</Database>
