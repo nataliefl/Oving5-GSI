@@ -67,6 +67,7 @@
     </Content>
     <Content Include="logon.aspx" />
     <Content Include="default.aspx" />
+    <Content Include="register.aspx" />
     <Content Include="WebUserControl1.ascx" />
   </ItemGroup>
   <ItemGroup>
@@ -101,6 +102,13 @@
     </Compile>
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebUserControl1.ascx.cs">
       <DependentUpon>WebUserControl1.ascx</DependentUpon>

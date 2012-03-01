@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.Sql;
 using System.Data.SqlClient;
+using System.Web.Security;
 
 namespace GSI
 {
@@ -14,9 +15,9 @@ namespace GSI
         private WebUserControl1 wuc;
         private Button btnLogin;
         private SqlConnection sqlConn;
-        private SqlTransaction sqlTrans;
         private SqlCommand sqlCom;
         private SqlDataReader sqlReader;
+        
  
         protected  void Page_Init(object sender, EventArgs e)
         {
@@ -38,31 +39,40 @@ namespace GSI
             sqlConn.ConnectionString = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["GSIDatabaseConnectionString"].ConnectionString; //Blæh
             sqlConn.Open();
             sqlCom = sqlConn.CreateCommand();
-            sqlTrans = sqlConn.BeginTransaction();
-            sqlCom.Transaction = sqlTrans;
+
 
             //Execute queries
             try
             {
-                sqlCom.Parameters.AddWithValue("userName", wuc.User);
-                sqlCom.Parameters.AddWithValue("passWord", wuc.Password);
-                sqlCom.CommandText = "SELECT Username, Password,userRole FROM Users WHERE Username=userName";
+                sqlCom.Parameters.AddWithValue("@userName", wuc.User);
+                sqlCom.Parameters.AddWithValue("@passWord", wuc.Password);
+                sqlCom.CommandText = "SELECT Username,Password,userRole FROM Users WHERE (Username=@userName) AND Password=@passWord";
                 sqlReader = sqlCom.ExecuteReader();
-                string user = (String)sqlReader[0];
+                sqlReader.Read();
+                string user = (String)sqlReader["Username"];
+                string pw = (String)sqlReader["Passoword"];
+              
                 
             }
             catch(Exception exc)
             {
-                sqlTrans.Rollback();
+               
             }
             finally
             {
+            sqlReader.Close();
             sqlConn.Close();
             sqlCom.Dispose();
-            sqlTrans.Dispose();
             }
             //
-      
+            //if (user == "test" && pw == "test")
+            //{
+            //    FormsAuthentication.RedirectFromLoginPage("test", true);
+            //}
+            //else
+            //{
+            //    Response.Redirect("logon.aspx", true);
+            //}
            
         }
     }

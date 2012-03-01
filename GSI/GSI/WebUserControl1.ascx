@@ -1,5 +1,4 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="WebUserControl1.ascx.cs" Inherits="GSI.WebUserControl1" ClassName="cLogin" %>
-<asp:Label ID="lbl1" runat="server" Text="Label">Welcome!</asp:Label>
 <br />
 <asp:Label ID="lblUsername" runat="server" Text="Label">Username : </asp:Label>
 <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>
@@ -13,7 +12,7 @@ ControlToValidate="txtUsername" ErrorMessage="*" ValidationGroup="login" ></asp:
     ValidationGroup="login"></asp:RequiredFieldValidator>
 
 <br />
-<asp:Button ID="btnLogin" runat="server" Text="Login" ValidationGroup="login" 
+<asp:Button ID="btnLogin" runat="server" Text="Go!" ValidationGroup="login" 
     onclick="btnLogin_Click" style="height: 26px" />
 
 
