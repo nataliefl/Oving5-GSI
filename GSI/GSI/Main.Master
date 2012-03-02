@@ -1,5 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="GSI.Main" %>
-
+<%@ Register src="~/Include/Menu.ascx" tagPrefix="uc1" tagName="Menu" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -11,11 +11,12 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    <img src="Images/GSI.jpg" alt="#FFFFFF"/>
+    <img src="Images/GSI.jpg" alt="#FFFFFF" runat="server"/>
     </div>
     <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
+        <uc1:Menu runat="server" ID="Menu1" />
+        <hr/>  
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">        
         </asp:ContentPlaceHolder>
     </div>
     </form>

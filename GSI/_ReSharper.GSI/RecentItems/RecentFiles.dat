@@ -1,17 +1,50 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/f:logon.aspx" caret="473" fromTop="6" />
-    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/f:WebUserControl1.ascx.cs" caret="827" fromTop="23" />
     <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/f:Main.Master.cs" caret="313" fromTop="14" />
-    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/f:logon.aspx.cs" caret="1558" fromTop="14" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:Secure/f:default.aspx" caret="0" fromTop="0" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:Include/f:CredentialsForm.ascx.cs" caret="0" fromTop="0" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:Include/f:CredentialsForm.ascx" caret="0" fromTop="0" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/f:Main.Master" caret="623" fromTop="15" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:NonSecure/f:register.aspx.cs" caret="1085" fromTop="18" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:NonSecure/f:logon.aspx" caret="240" fromTop="1" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:NonSecure/f:register.aspx" caret="144" fromTop="1" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/f:Web.config" caret="305" fromTop="11" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:Secure/f:Teams.aspx" caret="770" fromTop="13" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:Include/f:Menu.ascx" caret="656" fromTop="15" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:Secure/d:Admin/f:Adminpage.aspx" caret="0" fromTop="0" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:NonSecure/f:logon.aspx.cs" caret="1840" fromTop="12" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:Secure/f:Teams.aspx.cs" caret="941" fromTop="23" />
   </RecentFiles>
   <RecentEdits>
-    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/f:logon.aspx" caret="0" fromTop="0" />
-    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/f:logon.aspx.cs" caret="953" fromTop="20" />
-    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/f:logon.aspx.cs" caret="838" fromTop="15" />
-    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/f:logon.aspx.cs" caret="687" fromTop="11" />
-    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/f:logon.aspx.cs" caret="953" fromTop="19" />
-    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/f:logon.aspx" caret="489" fromTop="6" />
-    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/f:logon.aspx.cs" caret="1698" fromTop="24" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:Include/f:CredentialsForm.ascx.cs" caret="530" fromTop="15" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:Include/f:CredentialsForm.ascx.cs" caret="638" fromTop="19" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:NonSecure/f:logon.aspx.cs" caret="1780" fromTop="19" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:NonSecure/f:logon.aspx.cs" caret="2338" fromTop="17" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:NonSecure/f:logon.aspx.cs" caret="456" fromTop="14" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:NonSecure/f:register.aspx.cs" caret="1760" fromTop="12" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:NonSecure/f:logon.aspx.cs" caret="2158" fromTop="15" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/f:Web.config" caret="1182" fromTop="17" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:NonSecure/f:register.aspx" caret="705" fromTop="1" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:NonSecure/f:logon.aspx" caret="445" fromTop="6" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:NonSecure/f:register.aspx" caret="144" fromTop="1" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:NonSecure/f:logon.aspx" caret="600" fromTop="1" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:NonSecure/f:logon.aspx" caret="240" fromTop="1" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:NonSecure/f:logon.aspx.cs" caret="1840" fromTop="12" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:Secure/d:Admin/f:Adminpage.aspx" caret="0" fromTop="0" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/f:Web.config" caret="747" fromTop="15" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/f:Web.config" caret="656" fromTop="10" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/f:Web.config" caret="1041" fromTop="33" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/f:Web.config" caret="902" fromTop="25" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/f:Web.config" caret="978" fromTop="29" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:Include/f:Menu.ascx" caret="1029" fromTop="22" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:Include/f:Menu.ascx" caret="1087" fromTop="12" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:Include/f:Menu.ascx" caret="594" fromTop="12" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:Secure/f:Teams.aspx" caret="233" fromTop="3" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:Secure/f:Teams.aspx" caret="1011" fromTop="12" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:Secure/f:Teams.aspx.cs" caret="1070" fromTop="16" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:Secure/f:Teams.aspx.cs" caret="1139" fromTop="27" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:Secure/f:Teams.aspx.cs" caret="493" fromTop="13" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:Secure/f:Teams.aspx.cs" caret="226" fromTop="8" />
+    <File id="E30935A9-3F82-4EC4-B779-0A1EF4CD76F6/d:Secure/f:Teams.aspx.cs" caret="941" fromTop="23" />
   </RecentEdits>
 </RecentFiles>
